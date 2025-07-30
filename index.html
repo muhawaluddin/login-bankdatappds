@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Bank Data PPDS FK UNHAS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-header">
+            <div class="logo-container medium rounded">
+                <!-- Ganti src dengan path logo Anda -->
+                <img src="logo-unhas.png" alt="Logo FK UNHAS" class="logo-image" onerror="this.style.display='none'">
+                <!-- Fallback jika logo tidak ditemukan -->
+                <div class="logo-fallback"></div>
+            </div>
+            <h1>BANK DATA PPDS</h1>
+            <p>Fakultas Kedokteran<br>Universitas Hasanuddin</p>
+        </div>
+        
+        <form class="login-form" id="loginForm">
+            <div class="form-group">
+                <label for="username">Username atau NIM</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan username atau NIM" required>
+                <div class="error-message">Username atau NIM tidak boleh kosong</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+                <span class="password-toggle" onclick="togglePassword()">🔐</span>
+                <div class="error-message">Password tidak boleh kosong</div>
+            </div>
+            
+            <div class="remember-forgot">
+                <div class="remember-me">
+                    <input type="checkbox" id="remember" name="remember">
+                    <label for="remember">Ingat saya</label>
+                </div>
+                <a href="#" class="forgot-password">Lupa password?</a>
+            </div>
+            
+            <button type="submit" class="login-btn">Masuk</button>
+            
+            <div class="divider">
+                <span>atau</span>
+            </div>
+            
+            <div class="footer-text">
+                Belum memiliki akses?<br>
+                Hubungi administrator sistem untuk mendapatkan akun. 
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
